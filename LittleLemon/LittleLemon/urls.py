@@ -28,4 +28,6 @@ urlpatterns = [
     path('', include('LittleLemonApp.urls')),
     path('menu/',include('LittleLemonApp.urls')),
     path('booking/', include(router.urls)),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
 ]
